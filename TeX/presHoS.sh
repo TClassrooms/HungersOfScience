@@ -8,7 +8,7 @@ aspell check -l pt presHoS.tex
 
 pdflatex presHoS.tex
 
-bibtex references.bib
+bibtex presHoS
 
 pdflatex presHoS.tex
 
@@ -35,4 +35,4 @@ evince presHoS.pdf
 # aspell check -l en methods.tex 
 
 
-rm *.log *.aux  *.nav *.out *.snm *.toc
+rm *.log *.aux  *.nav *.out *.snm *.toc *.bbl *.blg

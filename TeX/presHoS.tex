@@ -49,6 +49,22 @@
 \usepackage{booktabs} % Top and bottom rules for table
 \usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to 
 
+
+% Configuracao das referencias
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,   % Cor das refer\u00eancias citadas
+    linkcolor=blue,   % Cor dos links
+    urlcolor=blue     % Cor dos links para URLs
+}
+
+% Configurar as cita\u00e7\u00f5es com par\u00eanteses e a cor azul
+\setcitestyle{round} % Par\u00eanteses ao inv\u00e9s de colchetes
+
+% Definir cor azul para cita\u00e7\u00f5es, incluindo par\u00eanteses
+%\renewcommand{\cite}[1]{\textcolor{blue}{\citet{#1}}}
+%\renewcommand{\citep}[1]{\textcolor{blue}{\citep{#1}}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subtitle{}
@@ -145,6 +161,150 @@
 
 \section{Introdu\c{c}ão} 
 
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/holoceno.png}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{Olhemos para a Terra através de outra perspectiva...}}
+\transboxin		
+	\end{frame}
+}
+
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/ediacariano.png}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{E voltemos um pouco ao passado, no Ediacariano...}}
+\transboxout		
+	\end{frame}
+}
+
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/faunaediacarana.jpeg}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{A vida diversifica-se nos oceanos}}
+	\transdissolve	
+	\end{frame}
+}
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/fundopreto.png}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{Registros da Fauna de Ediacara}}
+	\transboxout	
+    
+    \begin{minipage}{0.5\textwidth}
+	    \begin{figure}
+	\centering
+        \includegraphics[scale=0.3]{images/faunaediacara3.jpeg} % Substitua pelo caminho da sua primeira figura
+		    \caption{\textcolor{white}{\textit{Dickinsonia costata}, é um dos registros fósseis mais comum desse tempo.}} % Opcional
+	    \end{figure}
+    \end{minipage}%
+		\pause
+    \begin{minipage}{0.5\textwidth}
+	    \begin{figure}
+        \centering
+        \includegraphics[scale=0.25]{images/faunaediacaran2.jpg} % Substitua pelo caminho da sua segunda figura
+		    \caption{\textcolor{white}{Deslocava-se entre o sedimento de fundo, geralmente areias finas. Este espécime tinha cerca  de 6 centímetros de diâmtetro e fora encontrado, no sul da Austrália, e se alimentavam de tapetes microbialinos.}} % Opcional
+	    \end{figure}
+    \end{minipage}
+
+\flushright
+		\textcolor{blue}{\citep{Droser2024}}
+		
+	\end{frame}
+}
+
+
+
+
+
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/cambriano.png}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{Avancemos um pouco mais, no tempo ...}}
+	\transdissolve	
+	\end{frame}
+}
+
+
+
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/fundopreto.png}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{Registros da Fauna de Cambriana}}
+	\transboxout	
+    
+    \begin{minipage}{0.5\textwidth}
+	    \begin{figure}
+	\centering
+        \includegraphics[scale=0.1]{images/faunacambriana3.jpg} % Substitua pelo caminho da sua primeira figura
+		    \caption{\textcolor{white}{\textit{Pikaia gracilens}, é o fóssil mais notável desse tempo, representante dos primeiros cordatas com vasto registro no folhelho Burgess, no escudo Canadense.}} % Opcional
+	    \end{figure}
+    \end{minipage}%
+		\pause
+    \begin{minipage}{0.5\textwidth}
+	    \begin{figure}
+        \centering
+        \includegraphics[scale=0.15]{images/faunacambriana2.jpg} % Substitua pelo caminho da sua segunda figura
+		    \caption{\textcolor{white}{O corpo é lateralmente achatado com evidência de uma nadadeira ventral. Uma estrutura dorsal estreita que percorre o comprimento do organismo pode representar uma notocorda. Não possuem evidência de olhos.}} % Opcional
+	    \end{figure}
+    \end{minipage}
+
+\flushright
+		\textcolor{blue}{\citep{Briggs2015}}
+		
+	\end{frame}
+}
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/holoceno.png}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{Agora vamos avançar bastante, no tempo ...}}
+	\transdissolve	
+	\end{frame}
+}
+
+
+
+
 \section{Inteligência versus aprendizado}
 
 \section{Trazendo o aprendizado para um computador}
@@ -204,8 +364,8 @@
 \frametitle{Referências}
 %\beamertemplatetextbibitems
 \tiny
-%\bibliographystyle{apalike}
-%\bibliography{references}
+\bibliographystyle{apalike}
+\bibliography{references.bib}
 
 \end{frame}
 
