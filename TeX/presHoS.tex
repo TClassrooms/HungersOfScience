@@ -95,13 +95,12 @@
 {
 \usebackgroundtemplate{
 \centering
-\includegraphics[width=\paperwidth,height=\paperheight]{images/fundo.pdf}
+\includegraphics[width=\paperwidth,height=\paperheight]{images/capa.jpg}
 }
 	
 
 \begin{frame}
-Colocar uma capa legal aqui!
-	
+
 \end{frame}
 }
 
@@ -121,7 +120,21 @@ Colocar uma capa legal aqui!
 \end{frame}
 }
 
+{
+\usebackgroundtemplate{
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight]{images/fundo.pdf}
+}
 
+\begin{frame}
+	\centering
+	\frametitle{\textcolor{blue}{Sumário}}
+    %\large
+	\setbeamercolor{section in toc}{fg=blue,bg=blue}
+    \tableofcontents[currentsection,sectionstyle=show/shaded,subsectionstyle=show/show/shaded]
+\end{frame}
+
+}
 
 
 
@@ -143,6 +156,21 @@ Colocar uma capa legal aqui!
 \section{Mãos à obra}
 
 \section{Um exemplo prático}
+{
+\usebackgroundtemplate{
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight]{images/fundonovo.jpg}
+}
+\begin{frame}
+\vspace{2cm}
+\begin{center}
+\huge
+	\textcolor{orange}{Um exemplo prático}
+\end{center}
+
+\end{frame} 
+}
+
 
 \section{Bate-papo}
 
@@ -153,21 +181,6 @@ Colocar uma capa legal aqui!
 
 
 
-
-{
-\usebackgroundtemplate{
-\centering
-\includegraphics[width=\paperwidth,height=\paperheight]{images/fundo.pdf}
-}
-\begin{frame}
-\vspace{2cm}
-\begin{center}
-\huge
-	\textcolor{orange}{Iniciação Científica}
-\end{center}
-
-\end{frame} 
-}
 
 
 
