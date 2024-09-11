@@ -24,7 +24,7 @@
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
 \usepackage{wrapfig} % Allows wrapping text around tables and figures
 \usepackage{makeidx}
-\usepackage{epstopdf}%adiciona imagens em formato eps no pdf.
+\usepackage{epstopdf}%adiciona images em formato eps no pdf.
 \usepackage{subfigure}%cria ambientes de multifiguras
 \usepackage{float}%coloca as figuras exatamente aonde você quer
 \usepackage{times}
@@ -40,6 +40,20 @@
 \usepackage[framemethod=tikz]{mdframed}
 \usepackage{hyperref} 
 \usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+\smartdiagramset{%uniform color list=white!60!black for 6 items,
+	back arrow disabled=true, module minimum width=1.8cm,
+	module minimum height=2cm,
+	module x sep=2.7cm,
+	text width=1.8cm,
+	additions={
+		additional item offset=0.5cm,
+		additional item width=2cm,
+		additional item height=2cm,
+		additional item text width=3cm
+	}
+}
+  
 \usepackage{amssymb}
 \usepackage{etoolbox}
 \usepackage{tikz}
@@ -521,7 +535,59 @@
 
 
 
+\begin{frame}
+	\frametitle{Um breve histórico sobre as redes neurais artificiais}
+	\pause
+	\begin{small}
+		\smartdiagram[flow diagram:horizontal]{\textcolor{blue}{\cite{McCulloch1943}}}
+	\end{small}
+	\begin{itemize}
+		\item Definem o a função do neurônio numérico cuja a resposta dependia da entrada dos dados da rede e dos pesos utilizados e a denominam como Perceptron.
+	\end{itemize}	
+\end{frame}
 
+
+\begin{frame}
+	\frametitle{Um breve histórico sobre as redes neurais artificiais.}
+	\begin{small}
+		\smartdiagram[flow diagram:horizontal]{\citet{McCulloch1943}, \textcolor{blue}{\citet{Rosenblatt1962}}}
+	\end{small}
+	\begin{itemize}
+		\item Definem teoria de convergência do Perceptron onde ele prova que modelos de neurônios possuem propriedades similares ao cérebro humano.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Um breve histórico sobre as redes neurais artificiais}
+	\begin{small}
+		\smartdiagram[flow diagram:horizontal]{\citet{McCulloch1943}, \citet{Rosenblatt1962}, \textcolor{blue}{\cite{Minsky1969}}}
+	\end{small}
+	\begin{itemize}
+		\item Os Perceptrons de fato aprendem, mas somente resolvem problemas linearmente separáveis. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Um breve histórico sobre as redes neurais artificiais}
+	\begin{small}
+		\smartdiagram[flow diagram:horizontal]{\citet{McCulloch1943}, \citet{Rosenblatt1962}, \cite{Minsky1969}, \textcolor{blue}{\cite{Hopfield1982}}}
+	\end{small}
+	\begin{itemize}
+		\item Resolve problemas não-lineares criando um  modelo de memória auto-associativa com a habilidade de armazenar e depois recuperar um certo conjunto de padrões do dado.  
+		%\item The collective properties of this model produce a content-addressable memory which correctly yields an entire	memory from any subpart of sufficient size.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Um breve histórico sobre as redes neurais artificiais}
+	\begin{small}
+		\smartdiagram[flow diagram:horizontal]{\citet{McCulloch1943},\citet{Rosenblatt1962}, \cite{Minsky1969}, \cite{Hopfield1982}, \textcolor{blue}{\cite{Kohonen1989}}}
+	\end{small}
+	\begin{itemize}
+		\item Cria uma ferramenta eficiente para a identificação de padrões multivariados.  
+		%\item The collective properties of this model produce a content-addressable memory which correctly yields an entire	memory from any subpart of sufficient size.
+	\end{itemize}
+\end{frame}
 
 
 
@@ -550,11 +616,63 @@
 	\textcolor{orange}{Um exemplo prático}
 \end{center}
 
-\end{frame} 
+\end{frame}
 }
 
 
-\section{Bate-papo}
+\begin{frame}
+	\frametitle{Identificação de zona de falha com dados de poços}
+	\centering
+	\includegraphics[scale=0.25]{images/carreira2024.png} 
+\end{frame}
+
+
+
+
+%
+%\begin{frame}
+%	\frametitle{O Mapa Auto-organizado Supervisionado}
+%	\framesubtitle{Agrupamento de classes}
+%	\includegraphics[scale=0.5]{images/Introkoho1.png} 
+%\end{frame}
+%
+%
+%\begin{frame}
+%	\frametitle{O Mapa Auto-organizado Supervisionado}
+%	\framesubtitle{Agrupamento de classes}
+%	\includegraphics[scale=0.5]{images/Introkoho2.png} 
+%\end{frame}
+%
+%
+%\begin{frame}
+%	\frametitle{O Mapa Auto-organizado Supervisionado}
+%	\framesubtitle{Agrupamento de classes}
+%	\includegraphics[scale=0.5]{images/Introkoho3.png} 
+%\end{frame}
+%
+%
+%\begin{frame}
+%	\frametitle{O Mapa Auto-Organizado Supervisionado}
+%	\framesubtitle{Agrupamento de classes}
+%	\includegraphics[scale=0.5]{images/Introkoho4.png} 
+%\end{frame}
+%
+%\begin{frame}
+%	\frametitle{O Mapa Auto-Organizado Supervisionado}
+%	\framesubtitle{Agrupamento de classes}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[scale=0.4]{images/esperadoA.png}
+%	\end{figure}
+%    \begin{figure}
+%		\includegraphics[scale=0.3]{images/homunculo.png}
+%		\caption{\citep{Schott1993}}
+%    \end{figure}
+%\end{frame}
+
+
+
+
 
 
 
@@ -591,6 +709,44 @@
 
 \end{frame}
 
+}
+
+
+
+
+
+
+
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/bomba.jpeg}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+		\frametitle{\textcolor{yellow}{Fim}}
+	
+
+
+
+	\end{frame}
+}
+
+
+{
+	\usebackgroundtemplate{
+		\centering
+		\includegraphics[width=\paperwidth,height=\paperheight]{images/terminatornao.jpg}
+	}
+	
+	% Frame 3: plano de fundo
+	\begin{frame}
+	\flushright
+\textcolor{yellow}{... ainda não}
+	\end{frame}
+}
 
 
 \end{document}
